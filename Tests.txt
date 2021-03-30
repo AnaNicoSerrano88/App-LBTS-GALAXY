@@ -1,0 +1,22 @@
+1. PushSW(ACTUALIZACION DE SOFTWARE)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh PushSW.bsh"
+2. ResetBBU-TDS (HABILITAR MODO DE PRUEBA)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh 'resetToTestDedicated.sh 192.168.255.129'"
+3. GetBBU_TestingState (CONFIRMAR MODO DE PRUEBA)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh 'GetTestingState.bsh 192.168.255.129'"
+4. StartTestModels_TM1 (TRANSMISION MODO 1)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh StartTestModels_TM1.bsh"
+5.-StopTestModels (DETENER TRANSMISION 1)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh StopTestModels.bsh"
+6. StartTestModels_TM2 (TRANSMITIR MODO 2)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh StartTestModels_TM2.bsh"
+7.-StopTestModels (DETENER TRANSMISION 2)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh StopTestModels.bsh"
+8. GetRRH-Faults (OBTENER LOG DE LA UNIDAD)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh ' GetCurrentRRH_FLT.bsh 192.168.255.129'"
+9. GetBBU-FaultHistory (OBTENER LOG DEL SM)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh ' GetBBU_AlarmHistory.bsh 192.168.255.129'"
+10. GetRRH-Snapshot (OBTENER SNAPSHOT)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh ' GetSnapshot.bsh 192.168.255.129'"
+11. GetRRH-SW-Version (VERIFICAR VERSION DE SOFTWARE)
+C:\cygwin64\bin\bash.exe -l -c "RunFsm4Cmd.bsh 'GetCurrentRRH_SW.bsh 192.168.255.129'"
